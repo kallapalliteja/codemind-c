@@ -4,8 +4,10 @@
 int main()
 {
     int r;
-    float aoc;
+    float a;
     scanf("%d",&r);
-    aoc=pi*pow(r,2);
-    printf("%.2f",aoc);
+    a=pi*r*r;
+    printf("%.2f",a);
+    
+    
 }
