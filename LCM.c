@@ -1,20 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    int lcm,max;
-    int i;
-    scanf("%d %d",&a,&b);
-    max=a>b?a:b;
-    for(i=max;;i=i+max)
+    int a,b,h,c=0;
+    scanf("%d%d",&a,&b);
+    h=a>b?a:b;
+    int i,k;
+    for(i=1;i<=h;i++)
     {
-        if(i%a==0 && i%b==0)
+         k=h*i;
+        if(k%h==0 && k%a==0)
         {
-            lcm=i;
+            c=1;
             break;
         }
-        
     }
-    printf("%d",lcm);
-}
+    if(c>0) printf("%d",k);
     
+    
+}
