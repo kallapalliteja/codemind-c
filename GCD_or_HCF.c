@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i,max,flag;
-    scanf("%d %d",&a,&b);
-    max=a>b?a:b;
-    for(i=max;i>=1;i--)
+int a,b,c,i;
+scanf("%d%d",&a,&b);
+c=a<b?a:b;
+for(i=c;i>=1;i--)
+{
+    if(a%i==0 && b%i==0)
     {
-        if(a%i==0 && b%i==0)
-        {
-            flag=i;
-            break;
-        }
+        printf("%d",i);
+        break;
     }
-    printf("%d",flag);
+}
 }
