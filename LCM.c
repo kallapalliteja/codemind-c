@@ -15,6 +15,4 @@ int main()
         }
     }
     if(c>0) printf("%d",k);
-    
-    
 }
